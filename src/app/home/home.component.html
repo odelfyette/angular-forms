@@ -11,9 +11,23 @@
             </div>
         <div class="checkbox">
             <label>
-                <input type="checkbox"> Full Time Employee
+                <input type="checkbox" name="is-full-time" ngModel> Full Time Employee
             </label>
         </div>
+        
+        <label>Payment Type</label>
+        <div class="radio">
+            <label>
+                <input type="radio" name="pay-type" value="w2" checked>
+                W2
+            </label>
+        </div>
+        <div class="radio">
+                <label>
+                    <input type="radio" name="pay-type" value="1099">
+                    1099
+                </label>
+            </div>
         <button class="btn btn-primary" type="submit">Ok</button>
     </form>
 </div>
