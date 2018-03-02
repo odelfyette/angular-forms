@@ -57,6 +57,10 @@
                     </option>
                 </select>
             </div>
+            <div class="form-group col-md-3">
+                <datepicker name="startDate" [(ngModel)]="startDate">
+                </datepicker>
+            </div>
         <button class="btn btn-primary" type="submit"
         [disabled]="form.invalid">Ok</button>
     </form>
