@@ -1,4 +1,5 @@
-<div class="container">
+<h3 *ngIf="languages.length === 0">Loading...</h3>
+<div class="container" *ngIf="languages.length > 0">
     <h3>Employee Forms</h3>
     <form #form="ngForm" (submit)="submitForm(form)" novalidate>
         <div class="form-group" [class.has-error]="firstName.invalid && firstName.touched">
