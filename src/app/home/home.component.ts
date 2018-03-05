@@ -14,6 +14,7 @@ export class HomeComponent {
   model = new Employee('Darla', 'Smith', true, 'w2', "default");
   hasPrimaryLanguageError = false;
   startDate = new Date('Jan 1 2017');
+  startTime = new Date('Jan 1 2017 3:00 PM')
 
   constructor(private formPoster: FormPoster){
       this.formPoster.getLanguages()

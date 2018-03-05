@@ -16,6 +16,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 import { FormPoster } from './services/form-poster.service';
 import { DatepickerModule } from 'ng2-bootstrap';
+import { TimepickerModule } from 'ng2-bootstrap';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { DatepickerModule } from 'ng2-bootstrap';
     ReactiveFormsModule,
     HttpModule,
     DatepickerModule.forRoot(),
+    TimepickerModule.forRoot(),
     RouterModule.forRoot(rootRouterConfig, { useHash: true })
   ],
   providers: [
